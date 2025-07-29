@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Mon Objectif</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-bullseye"></i> Mon Objectif</h1>
+
+    
+    <section>
+      <p>
+        Mon objectif est clair : <strong>construire une nouvelle vie professionnelle</strong>, plus stable, plus libre, et tournée vers un métier d’avenir.  
+        Après avoir travaillé plusieurs années dans la logistique, j’ai compris que je voulais aller plus loin : comprendre ce qu’il y a derrière les systèmes, apprendre à les créer, à les améliorer, à les sécuriser.
+      </p>
+      <p>
+        Le développement back-end est pour moi un <strong>univers de logique, de construction, et de création discrète mais essentielle</strong>. C’est ce que j’aime. Et je suis prêt à travailler dur pour y arriver, car je sais ce que c’est de repartir de zéro.
+      </p>
+      <p>
+        Une grande partie de ma jeunesse a été marquée par les jeux vidéo, en particulier ceux qui demandaient réflexion, stratégie et patience.  
+        J’y ai consacré plusieurs milliers d’heures, et avec du recul, je réalise que cette expérience m’a appris à :
+        analyser des systèmes complexes, optimiser mes choix, apprendre par moi-même, et garder la motivation dans des contextes longs et progressifs.
+        Ces qualités, je souhaite aujourd’hui les mettre au service du code et de projets concrets.
+      </p>
+      <p>
+        Aujourd’hui, je cherche à intégrer une formation sérieuse, humaine, et tournée vers l’emploi. Pas pour "juste suivre un cours", mais pour <strong>apprendre, produire, et grandir dans un vrai parcours technique</strong>.
+      </p>
+      <p>
+        Mon souhait ? Devenir un développeur back-end capable, utile, et indépendant.  
+        Et surtout : <strong>ne jamais cesser d’apprendre</strong>.
+      </p>
+    </section>
+
+
+    <!-- Bouton retour -->
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="/" class="btn-retour"><i class="fas fa-arrow-left"></i> Retour à l’accueil</a>
+    
+<button id="dark-mode-toggle" style="position:fixed; bottom:70px; right:20px; padding:8px 12px; border:none; border-radius:20px; background:#ccc; cursor:pointer;">
+  🌙 / ☀️
+</button>
+</div>
+
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

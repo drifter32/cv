@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+>
+  <meta charset="UTF-8">
+  <title>Accueil - MonCVWeb</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-user-astronaut"></i> Bienvenue sur mon CV en ligne</h1>
+    <p>Je m'appelle Mihail ROIBU, en reconversion vers le développement web back-end.</p>
+    <p>Ce site est à la fois un CV, un espace de présentation de mes projets, et une démonstration de ce que j’apprends.</p>
+
+    <nav>
+      <a href="/cv"><i class="fas fa-file-alt"></i> Mon CV</a> |
+      <a href="/objectif"><i class="fas fa-bullseye"></i> Mon objectif</a> |
+      <a href="/projets"><i class="fas fa-code"></i> Projets</a> |
+      <a href="/contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+  </div>
+
+    <button id="dark-mode-toggle" style="position:fixed; bottom:70px; right:20px; padding:8px 12px; border:none; border-radius:20px; background:#ccc; cursor:pointer;">
+      🌙 / ☀️
+    </button>
+    
+  <a href="/lettre" class="btn-lettre" target="_blank">📄 Lettre de motivation</a>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <div style="margin-top: 40px; text-align: center;">
+      <a href="{{ url_for('static', filename='CV_Mihail_ROIBU.pdf') }}" class="btn-retour" download>
+        📄 Télécharger mon CV (PDF)
+      </a>
+    </div>
+    
+
+    <div style="margin-top: 10px; text-align: center;">
+      <a href="{{ url_for('static', filename='Lettre_Motivation_Mihail_ROIBU.pdf') }}" class="btn-retour" download>
+        ✉️ Télécharger ma lettre de motivation (PDF)
+      </a>
+    </div>
+    
+</body>
+</html>

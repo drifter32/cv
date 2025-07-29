@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+>
+  <meta charset="UTF-8">
+  <title>Mes projets</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-code"></i> Mes projets</h1>
+
+    <section>
+      <p>Voici une sélection de projets que j’ai créés ou que je suis en train de développer.</p>
+      <p>Cette section sera mise à jour au fil de mon apprentissage. 🚀</p>
+    </section>
+
+    <!-- Exemple de projet à venir -->
+    <div class="projet">
+      <h2>💡 MonCVWeb</h2>
+      <p>Un site web personnel avec l'aide de mon ami virtuel pour présenter mon CV, mes compétences et ma motivation. Utilise HTML, CSS, et Flask.</p>
+    
+<button id="dark-mode-toggle" style="position:fixed; bottom:70px; right:20px; padding:8px 12px; border:none; border-radius:20px; background:#ccc; cursor:pointer;">
+  🌙 / ☀️
+</button>
+</div>
+
+
+    <!-- Zone pour futurs projets -->
+    <div class="projet en-cours">
+      <h2>🛠️ Projet back-end à venir</h2>
+      <p>Je travaille actuellement sur une API de gestion de tâches avec Flask + SQLite.</p>
+    </div>
+
+    <!-- Bouton retour -->
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="/" class="btn-retour"><i class="fas fa-arrow-left"></i> Retour à l’accueil</a>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
