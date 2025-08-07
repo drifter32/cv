@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif ;
+}
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: auto;
+    background: #fff;
+display: grid;
+grid-template-columns: 1fr 2fr;
+box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left-side{
+    position: relative;
+    background: #2c3e50;
+    padding: 40px;
+}
+.profileTexte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.imgBx {
+  width: 140px;
+  height: 195px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 15px;
+}
+
+.imgBx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.profileTexte h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileTexte h2 span{
+font-size: 0.8em;
+font-weight: 300;
+}
+.contactInfo{
+    padding-top: 40px;
+}
+.title{
+    color: #17a2b8;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+  position: relative;  
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #dc5913c7;
+}
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+.contactInfo.education li{
+    margin-bottom: 15px;
+}
+.contactInfo.education h5{
+    color: #dc5913c7;
+    font-weight: 500;
+}
+    .contactInfo.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;
+}
+.contactInfo.education h4{
+    color: #fff;
+    font-weight: 300;
+}
+.contactInfo.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #dc5913c7;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #240106c7;
+}
+.container .right-side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 60px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2 {
+    color: #17a2b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+.p{
+    color: #333;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company{
+    min-width: 150px;
+}
+.about .box .year_company h5{
+text-transform: uppercase;
+color: #dc3545; 
+font-weight: 600;
+}
+.about.skills {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+    border-top: 2px solid #17a2b8;
+}
+
+.about.skills h4 {
+    font-size: 16px;
+    color: #f81418;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.about.skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+    margin-top: 10px;
+   /* border-top: 2px solid #17a2b8;*/
+}
+
+.about.skills li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.about.skills li::before {
+  content: "• ";
+  color: #17a2b8;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.contactInfo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contactInfo a:hover {
+    text-decoration: underline;
+}
+ .interest ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+ }
+ .interest ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+ }
+ .interest ul li .fa{
+    color: #dc3445;
+    font-size: 18px;
+    width: 20px;
+    margin-right: 8px;
+ }
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .container .left-side,
+  .container .right-side {
+    padding: 20px;
+  }
+
+  .interest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contactInfo.language .percent {
+    height: 5px;
+  }
+}
+.btn-motivation {
+    display: inline-block;
+    margin: 30px auto;
+    background-color: #17a2b8;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-motivation:hover {
+    background-color: #138496;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.btn-bottom-right {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+}
+.back-button {
+    display: inline-block;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #17a2b8;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    opacity: 0.75;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    z-index: 999;
+}
+
+.back-button:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    background-color: #138496;
+}
+
+
+/* SUR MOBILE : bouton centré en bas */
+@media (max-width: 768px) {
+  .back-button {
+    position: static;
+    display: block;
+    margin: 40px auto 0;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 10px 24px;
+  }
+}
+
+/* Sur écran < 600px (smartphone) : bouton plus petit, plus transparent */
+@media (max-width: 600px) {
+  .btn-bottom-right {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 16px;
+    font-size: 14px;
+    opacity: 0.85;
+    border-radius: 20px;
+  }
+}
+.back-button {
+  opacity: 0.85;
+}
+
+.back-button:hover {
+  opacity: 1;
+}
+
